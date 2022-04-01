@@ -25,6 +25,7 @@
 		3F5FB6DE27F48AC1001993EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F5FB6DD27F48AC1001993EB /* GoogleService-Info.plist */; };
 		3F5FB6E027F48ED0001993EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FB6DF27F48ED0001993EB /* User.swift */; };
 		3F5FB6E227F48EDA001993EB /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FB6E127F48EDA001993EB /* BlogPost.swift */; };
+		3FB4F04727F6AD8600B08651 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4F04627F6AD8600B08651 /* SignInHeaderView.swift */; };
 		AADA01B9F57101ACBC4F4250 /* Pods_BlogApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964AA219A769B239AF47EE10 /* Pods_BlogApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		3F5FB6DD27F48AC1001993EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3F5FB6DF27F48ED0001993EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3F5FB6E127F48EDA001993EB /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		3FB4F04627F6AD8600B08651 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
 		964AA219A769B239AF47EE10 /* Pods_BlogApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlogApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DD7B2143C47383D934D01C /* Pods-BlogApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogApp.release.xcconfig"; path = "Target Support Files/Pods-BlogApp/Pods-BlogApp.release.xcconfig"; sourceTree = "<group>"; };
 		FF29FEB85DD667F7814A092D /* Pods-BlogApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogApp.debug.xcconfig"; path = "Target Support Files/Pods-BlogApp/Pods-BlogApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				3F5FB6B527F48002001993EB /* LaunchScreen.storyboard */,
+				3FB4F04627F6AD8600B08651 /* SignInHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				3F5FB6C527F481F1001993EB /* ProfileViewController.swift in Sources */,
 				3F5FB6C727F48210001993EB /* TabBarViewController.swift in Sources */,
 				3F5FB6AD27F48001001993EB /* SceneDelegate.swift in Sources */,
+				3FB4F04727F6AD8600B08651 /* SignInHeaderView.swift in Sources */,
 				3F5FB6D527F4826C001993EB /* DataBase.swift in Sources */,
 				3F5FB6D127F48248001993EB /* CreateNewPostViewController.swift in Sources */,
 			);

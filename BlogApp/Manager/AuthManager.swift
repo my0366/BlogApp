@@ -27,7 +27,7 @@ final class AuthManager {
         }
         
         auth.createUser(withEmail: email, password: password) { result,error in
-            completion(true)
+            completion(false)
             return
         }
         
