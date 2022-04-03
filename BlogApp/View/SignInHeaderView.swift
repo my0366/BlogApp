@@ -12,7 +12,6 @@ class SignInHeaderView: UIView {
     private let imageView: UIImageView = {
         let imageView = UIImageView(image:  UIImage(named: "logo"))
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .systemPink
         return imageView
     }()
     
@@ -30,6 +29,8 @@ class SignInHeaderView: UIView {
         addSubview(label)
         addSubview(imageView)
         
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        label.translatesAutoresizingMaskIntoConstraints = false
         
     }
     
@@ -39,10 +40,9 @@ class SignInHeaderView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        label.translatesAutoresizingMaskIntoConstraints = false
         
-        
-        
+        let size : CGFloat = width / 4
+        imageView.frame = CGRect(x: (width-size)/2, y: 10, width: size, height: size)
+        label.frame = CGRect(x: 20, y: imageView.bottom+10, width: width-40, height: height-size-30)
     }
 }

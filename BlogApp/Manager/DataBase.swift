@@ -7,7 +7,7 @@
 
 import Foundation
 import FirebaseFirestore
-
+import Firebase
 final class DataBase {
     static let shared = DataBase()
     
@@ -39,7 +39,12 @@ final class DataBase {
         user : User,
         completion : @escaping (Bool) -> Void
     ) {
-        
+        let documentId = user.email.replacingOccurrences(of: ".", with: "_").replacingOccurrences(of: "@", with: "_")
+        let data = ["name" : user.name, "email" : user.email]
+        database.collection("users").document(documentId).setData(data) { error in
+            completion(error == nil)
+        }
     }
     
 }
+

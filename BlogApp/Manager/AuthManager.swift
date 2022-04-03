@@ -15,26 +15,29 @@ final class AuthManager {
     
     private init () {}
     
-    public var isSigneedIn: Bool {
+    public var isSignedIn: Bool {
         return auth.currentUser != nil
         
     }
-    public func singUp(email:String, password:String, completion : @escaping (Bool) -> Void) {
+    public func signUp(email:String,
+                       password:String,
+                       completion : @escaping (Bool) -> Void) {
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty,
               password.count >= 6 else {
             return
         }
         
-        auth.createUser(withEmail: email, password: password) { result,error in
-            completion(false)
-            return
+        auth.createUser(withEmail: email, password: password) { result, error in
+            guard result != nil, error == nil else {
+                completion(true)
+                return
+            }
+            completion(true)
         }
-        
-        completion(true)
     }
     
-    public func singIn(email:String, password:String, completion : @escaping (Bool) -> Void) {
+    public func signIn(email:String, password:String, completion : @escaping (Bool) -> Void) {
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty,
               password.count >= 6 else {
@@ -42,13 +45,15 @@ final class AuthManager {
         }
         
         auth.signIn(withEmail: email, password: password) { result,error in
-            completion(false)
-            return
+            guard result != nil, error == nil else {
+                completion(false)
+                return
+            }
+            completion(true)
         }
-        completion(true)
     }
     
-    public func singOut(completion : @escaping (Bool) -> Void) {
+    public func signOut(completion : @escaping (Bool) -> Void) {
         do {
             try auth.signOut()
             completion(true)
