@@ -18,6 +18,8 @@ class SignInViewController: UITabBarController {
         field.leftViewMode = .always
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
         field.placeholder = "Email Address"
+        field.autocapitalizationType = .none
+        field.autocorrectionType = .no
         field.layer.cornerRadius = 8
         field.layer.masksToBounds = true
         return field

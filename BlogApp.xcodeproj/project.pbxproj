@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F03BB8E27FD20AE00AB2B03 /* PostPreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F03BB8D27FD20AE00AB2B03 /* PostPreviewTableViewCell.swift */; };
+		3F03BB9027FD20C900AB2B03 /* PostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F03BB8F27FD20C900AB2B03 /* PostHeaderTableViewCell.swift */; };
+		3F03BB9127FD9F4700AB2B03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FB6AA27F48001001993EB /* AppDelegate.swift */; };
 		3F52D40A27F7F985002358AD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F52D40927F7F985002358AD /* Extension.swift */; };
-		3F5FB6AB27F48001001993EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FB6AA27F48001001993EB /* AppDelegate.swift */; };
 		3F5FB6AD27F48001001993EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FB6AC27F48001001993EB /* SceneDelegate.swift */; };
 		3F5FB6AF27F48001001993EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FB6AE27F48001001993EB /* HomeViewController.swift */; };
 		3F5FB6B427F48002001993EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5FB6B327F48002001993EB /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F03BB8D27FD20AE00AB2B03 /* PostPreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewTableViewCell.swift; sourceTree = "<group>"; };
+		3F03BB8F27FD20C900AB2B03 /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		3F52D40927F7F985002358AD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		3F5FB6A727F48001001993EB /* BlogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5FB6AA27F48001001993EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 			children = (
 				3F5FB6B527F48002001993EB /* LaunchScreen.storyboard */,
 				3FB4F04627F6AD8600B08651 /* SignInHeaderView.swift */,
+				3F03BB8D27FD20AE00AB2B03 /* PostPreviewTableViewCell.swift */,
+				3F03BB8F27FD20C900AB2B03 /* PostHeaderTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,15 +314,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F03BB8E27FD20AE00AB2B03 /* PostPreviewTableViewCell.swift in Sources */,
 				3F5FB6E227F48EDA001993EB /* BlogPost.swift in Sources */,
+				3F03BB9127FD9F4700AB2B03 /* AppDelegate.swift in Sources */,
 				3F5FB6CD27F4822F001993EB /* PostViewController.swift in Sources */,
 				3F5FB6C927F4821B001993EB /* SignInViewController.swift in Sources */,
 				3F5FB6D927F48280001993EB /* StorageManager.swift in Sources */,
 				3F5FB6D727F48277001993EB /* AuthManager.swift in Sources */,
 				3F5FB6CB27F48222001993EB /* SignUpViewController.swift in Sources */,
 				3F5FB6AF27F48001001993EB /* HomeViewController.swift in Sources */,
+				3F03BB9027FD20C900AB2B03 /* PostHeaderTableViewCell.swift in Sources */,
 				3F5FB6E027F48ED0001993EB /* User.swift in Sources */,
-				3F5FB6AB27F48001001993EB /* AppDelegate.swift in Sources */,
 				3F5FB6CF27F48235001993EB /* ViewPostViewController.swift in Sources */,
 				3F52D40A27F7F985002358AD /* Extension.swift in Sources */,
 				3F5FB6C527F481F1001993EB /* ProfileViewController.swift in Sources */,

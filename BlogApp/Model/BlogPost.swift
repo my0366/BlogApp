@@ -13,5 +13,4 @@ struct BlogPost {
     let timestemp:TimeInterval
     let headerImageUrl : URL?
     let text:String
-    
 }
